@@ -1,8 +1,9 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
-RUN sudo apt-get update && \
-        sudo apt-get install -y \
-            python3 python3-numpy python3-setuptools python3-nose python3-pandas \
-            python python-numpy python-setuptools python-nose python-pandas \
-            pep8 python-pip python-wheel \
-            python-sphinx
+RUN apt-get update && \
+    apt-get install -y \
+    python3 python3-numpy python3-nose python3-pandas \
+    python python-numpy python-nose python-pandas \
+    pep8 python-pip python3-pip python-wheel \
+    python-sphinx && \
+    pip install --upgrade setuptools
