@@ -1,1 +1,1 @@
-A Docker image based on Ubuntu 14.04 with Python 3 and numpy installed.
+A Docker image based on Ubuntu 16.04 with Python 3 and numpy installed.
